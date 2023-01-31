@@ -55,6 +55,42 @@ The buggy code that will be analyzed here will be the reverse method in ArrayExa
     assertArrayEquals(new int[]{3, 2, 1}, ArrayExamples.reversed(input1));
   }
   ```
+  
+- A non-failing input:
+  ```
+  @Test
+  public void testReversed1() {
+    int[] input1 = {0};
+    assertArrayEquals(new int[]{0}, ArrayExamples.reversed(input1));
+  }
+  ```
+
+- The symptoms, as the output of the tests:
+  
+
+- The bug and the fix:
+  Before:
+  ```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+  ```
+  
+  After:
+  ```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }
+  ```
+
 
 ## Part 3 - Afterthoughts 
 
