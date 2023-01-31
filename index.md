@@ -66,8 +66,8 @@ The buggy code that will be analyzed here will be the reverse method in ArrayExa
   ```
 
 - The symptoms, as the output of the tests:
+![Image](Symptoms.png)
   
-
 - The bug and the fix:
   
   Before:
