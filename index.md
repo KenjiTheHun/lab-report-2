@@ -69,7 +69,7 @@ The buggy code that will be analyzed here will be the reverse method in ArrayExa
   
 
 - The bug and the fix:
-  Before:
+    Before:
   ```
   static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
