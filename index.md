@@ -20,11 +20,41 @@ The handleRequest method is called upon entering the local server
   - `result` is the collection of all added messages used to display the messages
 
 - How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+  - `url` becomes `localhost:4000/add-message?s=hello`.
+  - `parameters` becomes `localhost:4000/add-message?s` and `hello`.
+  - `searches` becomes `hello`.
+  - `result` becomes `hello \n`.
+  - `element` becomes `hello`.
+ 
+ ![Image](add2.png)
+ 
+- Which methods in your code are called?
+The handleRequest method is called upon entering the local server
 
-`url` becomes `localhost:4000/add-message?s=hello`.
-`parameters` becomes `localhost:4000/add-message?s` and `hello`.
-`searches` becomes `hello`.
-`result` becomes `hello`.
-`element` becomes `hello`.
+- What are the relevant arguments to those methods, and the values of any relevant fields of the class?
+  - `searches` is the ArrayList containing all added messages. 
+  - `url` is the url input, typically entered as `localhost:(port number)/add-message?=(message)`. 
+  - `parameters` is the the array of strings containing the url split up on `=`. 
+  - `result` is the collection of all added messages used to display the messages
+
+- How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
+  - `url` becomes `localhost:4000/add-message?s=how are you`.
+  - `parameters` becomes `localhost:4000/add-message?s` and `how are you`.
+  - `searches` becomes `hello \n how are you \n`.
+  - `result` becomes `hello \n how are you \n`.
+  - `element` becomes `how are you`.
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
