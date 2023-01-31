@@ -91,7 +91,7 @@ The buggy code that will be analyzed here will be the reverse method in ArrayExa
     return newArray;
   }
   ```
-
+The fix here succeeded as previously the original array was being filled with the value of a blank new array and returned; after the fix, the values of the original array is now being assigned to the new array and the value of the new array is the one returned.
 
 ## Part 3 - Afterthoughts 
 
