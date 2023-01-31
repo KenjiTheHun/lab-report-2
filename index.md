@@ -29,7 +29,7 @@ The handleRequest method is called upon entering the local server
  ![Image](add2.png)
  
 - Which methods in your code are called?
-The handleRequest method is called upon entering the local server
+  - The handleRequest method is called upon entering the local server
 
 - What are the relevant arguments to those methods, and the values of any relevant fields of the class?
   - `searches` is the ArrayList containing all added messages. 
@@ -44,6 +44,19 @@ The handleRequest method is called upon entering the local server
   - `result` becomes `hello \n how are you \n`.
   - `element` becomes `how are you`.
 
+## Part 2 - Analyzing bugs and symptoms
+The buggy code that will be analyzed here will be the reverse method in ArrayExamples.java
+
+- A failure inducing input:
+  ```
+  @Test
+  public void testReversed2() {
+    int[] input1 = {1, 2, 3};
+    assertArrayEquals(new int[]{3, 2, 1}, ArrayExamples.reversed(input1));
+  }
+  ```
+
+## Part 3 - Afterthoughts 
 
 
 
