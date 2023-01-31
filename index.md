@@ -94,7 +94,7 @@ The buggy code that will be analyzed here will be the reverse method in ArrayExa
 The fix here succeeded as previously the original array was being filled with the value of a blank new array and returned; after the fix, the values of the original array is now being assigned to the new array and the value of the new array is the one returned.
 
 ## Part 3 - Afterthoughts 
-
+Overall, something that I learned in both lab 2 and 3 is how to utilize GitHub to my desire. Before 15L, my experience with GitHub was mostly limited to downloading Programming Assignments for CSE11 and downloading applications. After the last two labs however, I've been able to create and edit files on my laptop and push them onto the remote repos on my GitHub page, as well as publishing a page as a part of my lab reports. Though this is still intro level knowledge, it still established a foundation for future learning.
 
 
 
